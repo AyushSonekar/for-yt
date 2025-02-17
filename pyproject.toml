@@ -1,18 +1,20 @@
-[project]
-name = "repl-nix-workspace"
+[tool.poetry]
+name = "your-project-name"
 version = "0.1.0"
 description = "Add your description here"
-requires-python = ">=3.11"
-dependencies = [
-    "flask-login>=0.6.3",
-    "flask>=3.1.0",
-    "openai-whisper>=20240930",
-    "torch>=2.6.0",
-    "tqdm>=4.67.1",
-    "whisper>=1.1.10",
-    "yt-dlp>=2025.1.26",
-    "flask-wtf>=1.2.2",
-]
+authors = ["Your Name <youremail@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+flask = "^3.1.0"
+flask-login = "^0.6.3"
+openai-whisper = "^20240930"
+torch = "^2.6.0"
+tqdm = "^4.67.1"
+whisper = "^1.1.10"
+yt-dlp = "^2025.1.26"
+flask-wtf = "^1.2.2"
 
 [[tool.uv.index]]
 explicit = true
